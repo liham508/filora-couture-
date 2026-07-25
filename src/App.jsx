@@ -76,17 +76,17 @@ const SIZES_FEMME = ["XS", "S", "M", "L", "XL"];
 const SIZES_ENFANT = ["2-3 ans", "4-5 ans", "6-7 ans", "8-9 ans"];
 
 const PRODUCTS = [
-  { id: 1, name: "Robe Bois de Rose", cat: "femme", price: 89, kind: "robe", color: "#B98A9A", desc: "Une robe fluide, coupée et cousue à l'atelier, pensée pour accompagner une journée entière sans un pli de trop." },
-  { id: 2, name: "Chemisier Lin", cat: "femme", price: 65, kind: "haut", color: "#F4E3C9", desc: "Lin léger, boutons nacrés, une pièce simple qui se porte aussi bien au bureau qu'en week-end." },
-  { id: 3, name: "Manteau Fait Main", cat: "femme", price: 165, kind: "manteau", color: "#8B5D6B", desc: "Notre pièce signature : doublure intérieure cousue main, pour les saisons fraîches." },
-  { id: 4, name: "Pantalon Atelier", cat: "femme", price: 72, kind: "pantalon", color: "#4A3F41", desc: "Coupe droite, taille haute, taillé dans un tissu résistant pensé pour durer." },
-  { id: 5, name: "Robe Sauge", cat: "femme", price: 78, kind: "robe", color: "#CFE0D6", desc: "Une teinte douce et naturelle, pour les occasions qui méritent un petit supplément d'élégance." },
-  { id: 6, name: "Salopette Mini", cat: "enfant", price: 48, kind: "salopette", color: "#B98A9A", desc: "Boutons pression pour les changes rapides, tissu doux pour les journées qui bougent beaucoup." },
-  { id: 7, name: "T-shirt Câlin", cat: "enfant", price: 24, kind: "tshirt", color: "#CFE0D6", desc: "Coton doux, coutures plates pour ne jamais gratter, coupe confortable." },
-  { id: 8, name: "Robe Petit Point", cat: "enfant", price: 42, kind: "robe", color: "#F4E3C9", desc: "Petite robe légère cousue à l'atelier, pour twirler dans la cour de récré." },
-  { id: 9, name: "Manteau Petit Ours", cat: "enfant", price: 68, kind: "manteau", color: "#8B5D6B", desc: "Chaud et enveloppant, avec une capuche doublée pour les matins frisquets." },
-  { id: 10, name: "Pantalon Récré", cat: "enfant", price: 36, kind: "pantalon", color: "#4A3F41", desc: "Genoux renforcés, taille ajustable élastiquée : pensé pour grimper, tomber, recommencer." },
-  { id: 11, name: "Ensemble Hanbok", cat: "femme", price: 145, photo: "/products/ensemble-hanbok.jpg", desc: "Veste croisée vert sauge et pantalon large à rayures, inspiration coréenne. Col croisé, attache plate cousue main, manches longues droites." },
+  { id: 1, name: "Robe Bois de Rose", cat: "femme", price: 13500, kind: "robe", color: "#B98A9A", desc: "Une robe fluide, coupée et cousue à l'atelier, pensée pour accompagner une journée entière sans un pli de trop." },
+  { id: 2, name: "Chemisier Lin", cat: "femme", price: 10000, kind: "haut", color: "#F4E3C9", desc: "Lin léger, boutons nacrés, une pièce simple qui se porte aussi bien au bureau qu'en week-end." },
+  { id: 3, name: "Manteau Fait Main", cat: "femme", price: 25000, kind: "manteau", color: "#8B5D6B", desc: "Notre pièce signature : doublure intérieure cousue main, pour les saisons fraîches." },
+  { id: 4, name: "Pantalon Atelier", cat: "femme", price: 11000, kind: "pantalon", color: "#4A3F41", desc: "Coupe droite, taille haute, taillé dans un tissu résistant pensé pour durer." },
+  { id: 5, name: "Robe Sauge", cat: "femme", price: 12000, kind: "robe", color: "#CFE0D6", desc: "Une teinte douce et naturelle, pour les occasions qui méritent un petit supplément d'élégance." },
+  { id: 6, name: "Salopette Mini", cat: "enfant", price: 7500, kind: "salopette", color: "#B98A9A", desc: "Boutons pression pour les changes rapides, tissu doux pour les journées qui bougent beaucoup." },
+  { id: 7, name: "T-shirt Câlin", cat: "enfant", price: 3500, kind: "tshirt", color: "#CFE0D6", desc: "Coton doux, coutures plates pour ne jamais gratter, coupe confortable." },
+  { id: 8, name: "Robe Petit Point", cat: "enfant", price: 6500, kind: "robe", color: "#F4E3C9", desc: "Petite robe légère cousue à l'atelier, pour twirler dans la cour de récré." },
+  { id: 9, name: "Manteau Petit Ours", cat: "enfant", price: 10500, kind: "manteau", color: "#8B5D6B", desc: "Chaud et enveloppant, avec une capuche doublée pour les matins frisquets." },
+  { id: 10, name: "Pantalon Récré", cat: "enfant", price: 5500, kind: "pantalon", color: "#4A3F41", desc: "Genoux renforcés, taille ajustable élastiquée : pensé pour grimper, tomber, recommencer." },
+  { id: 11, name: "Ensemble Hanbok", cat: "femme", price: 22000, photo: "/products/ensemble-hanbok.jpg", desc: "Veste croisée vert sauge et pantalon large à rayures, inspiration coréenne. Col croisé, attache plate cousue main, manches longues droites." },
 ];
 
 const THEMES = {
@@ -96,7 +96,7 @@ const THEMES = {
 };
 
 function euro(n) {
-  return n.toLocaleString("fr-FR", { minimumFractionDigits: 2 }) + " €";
+  return n.toLocaleString("fr-FR") + " DA";
 }
 
 export default function Boutique() {
