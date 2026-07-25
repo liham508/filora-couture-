@@ -86,7 +86,7 @@ const PRODUCTS = [
   { id: 8, name: "Robe Petit Point", cat: "enfant", price: 6500, kind: "robe", color: "#F4E3C9", desc: "Petite robe légère cousue à l'atelier, pour twirler dans la cour de récré." },
   { id: 9, name: "Manteau Petit Ours", cat: "enfant", price: 10500, kind: "manteau", color: "#8B5D6B", desc: "Chaud et enveloppant, avec une capuche doublée pour les matins frisquets." },
   { id: 10, name: "Pantalon Récré", cat: "enfant", price: 5500, kind: "pantalon", color: "#4A3F41", desc: "Genoux renforcés, taille ajustable élastiquée : pensé pour grimper, tomber, recommencer." },
-  { id: 11, name: "Ensemble Hanbok", cat: "femme", price: 22000, photo: "/products/ensemble-hanbok.jpg", desc: "Veste croisée vert sauge et pantalon large à rayures, inspiration coréenne. Col croisé, attache plate cousue main, manches longues droites." },
+  { id: 11, name: "Ensemble Hanbok", cat: "femme", price: 6900, photo: "/products/ensemble-hanbok.jpg", desc: "Veste croisée vert sauge et pantalon large à rayures, inspiration coréenne. Col croisé, attache plate cousue main, manches longues droites." },
 ];
 
 const THEMES = {
