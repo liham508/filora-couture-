@@ -416,7 +416,7 @@ export default function Boutique() {
   const numero = "213782196646";
   const message = `Bonjour, je souhaite confirmer ma commande de ${euro(total)}. Paiement à la livraison.`;
   window.open(`https://wa.me/${numero}?text=${encodeURIComponent(message)}`, "_blank");
-   setStep("confirme");\n}}
+   setStep("confirme");}}
                   className="w-full rounded-full py-3 text-sm transition-colors"
                   style={{ background: theme.accent, color: theme.onAccent }}
                 >
