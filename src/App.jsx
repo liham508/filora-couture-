@@ -470,7 +470,7 @@ export default function Boutique() {
               style={{ background: selected.photo ? "transparent" : (selected.cat === "femme" ? "#8B5D6B" : "#CFE0D6"), padding: selected.photo ? 0 : "2.5rem" }}
             >
               {selected.photo ? (
-                <img src={selected.photo} alt={selected.name} className="w-full h-full object-cover" />
+                <img src={selected.photo} alt={selected.name} className="w-full h-full object-contain" />
               ) : (
                 <div className="w-2/3">
                   <Garment kind={selected.kind} color={selected.color} />
