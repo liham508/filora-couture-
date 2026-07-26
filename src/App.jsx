@@ -412,7 +412,11 @@ export default function Boutique() {
                   <span className="mono">{euro(total)}</span>
                 </div>
                 <button
-                  onClick={() => setStep("confirme")}
+                  onClick={() => () => {
+  const numero = "213782196646";
+  const message = `Bonjour, je souhaite confirmer ma commande de ${euro(total)}. Paiement à la livraison.`;
+  window.open(`https://wa.me/${numero}?text=${encodeURIComponent(message)}`, "_blank");
+   setStep("confirme")}
                   className="w-full rounded-full py-3 text-sm transition-colors"
                   style={{ background: theme.accent, color: theme.onAccent }}
                 >
