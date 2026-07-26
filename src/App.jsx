@@ -428,7 +428,13 @@ onChange={(e) => setTelephone(e.target.value)}
                 <button
                   onClick={() =>{
   const numero = "213782196646";
-  const message = `Bonjour, je souhaite confirmer ma commande de ${euro(total)}. Paiement à la livraison.`;
+  const message = `Bonjour, je souhaite confirmer ma commande de ${euro(total)}.
+Nom : ${nom}
+Adresse : ${adresse}
+Ville : ${ville}
+Code postal : ${codePostal}
+Téléphone : ${telephone}
+Paiement à la livraison.`;
   window.open(`https://wa.me/${numero}?text=${encodeURIComponent(message)}`, "_blank");
    setStep("confirme");}}
                   className="w-full rounded-full py-3 text-sm transition-colors"
