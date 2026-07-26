@@ -426,9 +426,15 @@ onChange={(e) => setTelephone(e.target.value)}
                   <span className="mono">{euro(total)}</span>
                 </div>
                 <button
-                  onClick={() =>{
+                  onClick={() => {
   const numero = "213782196646";
-  const message = `Bonjour, je souhaite confirmer ma commande de ${euro(total)}.
+  const listeArticles = cartItems
+    .map((item) => `- ${item.name} (taille ${item.size}) x${item.qty}`)
+    .join("\n");
+  const message = `Bonjour, je souhaite confirmer ma commande :
+${listeArticles}
+
+Total : ${euro(total)}
 Nom : ${nom}
 Adresse : ${adresse}
 Ville : ${ville}
@@ -436,7 +442,8 @@ Code postal : ${codePostal}
 Téléphone : ${telephone}
 Paiement à la livraison.`;
   window.open(`https://wa.me/${numero}?text=${encodeURIComponent(message)}`, "_blank");
-   setStep("confirme");}}
+  setStep("confirme");}}
+}
                   className="w-full rounded-full py-3 text-sm transition-colors"
                   style={{ background: theme.accent, color: theme.onAccent }}
                 >
