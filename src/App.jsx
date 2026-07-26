@@ -105,7 +105,11 @@ export default function Boutique() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [step, setStep] = useState("panier"); // panier | infos | confirme
   const [selected, setSelected] = useState(null); // produit affiché en détail
-  const [pickedSize, setPickedSize] = useState(null);
+  const [pickedSize, setPickedSize] = useState(null);const [nom, setNom] = useState("");
+const [adresse, setAdresse] = useState("");
+const [ville, setVille] = useState("");
+const [codePostal, setCodePostal] = useState("");
+const [telephone, setTelephone] = useState("");
 
   const theme = THEMES[filter];
 
