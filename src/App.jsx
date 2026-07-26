@@ -403,6 +403,8 @@ onChange={(e) => setVille(e.target.value)}
                   />
                   <input
                     placeholder="Code postal"
+                    value={codePostal}
+onChange={(e) => setCodePostal(e.target.value)}
                     className="border border-[#4A3F41]/20 rounded-xl px-4 py-2.5 text-sm bg-white/60 w-28"
                   />
                 </div>
