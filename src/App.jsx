@@ -410,6 +410,8 @@ onChange={(e) => setCodePostal(e.target.value)}
                 </div>
                 <input
                   placeholder="Téléphone"
+                  value={telephone}
+onChange={(e) => setTelephone(e.target.value)}
                   className="border border-[#4A3F41]/20 rounded-xl px-4 py-2.5 text-sm bg-white/60"
                 />
                 <div
