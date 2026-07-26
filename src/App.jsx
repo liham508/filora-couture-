@@ -324,7 +324,7 @@ export default function Boutique() {
                     <div key={item.key} className="flex gap-3 items-center">
                       <div className={`w-14 h-14 rounded-xl bg-white/60 overflow-hidden flex-shrink-0 ${item.photo ? "" : "p-2"}`}>
                         {item.photo ? (
-                          <img src={item.photo} alt={item.name} className="w-full h-full object-cover" />
+                          <img src={item.photo} alt={item.name} className="w-full h-full object-contain" />
                         ) : (
                           <Garment kind={item.kind} color={item.color} />
                         )}
