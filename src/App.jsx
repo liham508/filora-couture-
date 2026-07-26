@@ -255,7 +255,7 @@ export default function Boutique() {
             >
               <div className="aspect-[4/5] mb-3 flex items-center justify-center overflow-hidden rounded-xl">
                 {p.photo ? (
-                  <img src={p.photo} alt={p.name} className="w-full h-full object-cover" />
+                  <img src={p.photo} alt={p.name} className="w-full h-full object-contain" />
                 ) : (
                   <div className="w-2/3">
                     <Garment kind={p.kind} color={p.color} />
