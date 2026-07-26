@@ -383,7 +383,8 @@ const [telephone, setTelephone] = useState("");
                   <ArrowLeft size={14} /> Retour au panier
                 </button>
                 <input
-                  placeholder="Nom complet"
+                  placeholder="Nom complet"value={nom}
+onChange={(e) => setNom(e.target.value)}
                   className="border border-[#4A3F41]/20 rounded-xl px-4 py-2.5 text-sm bg-white/60"
                 />
                 <input
