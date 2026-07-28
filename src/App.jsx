@@ -272,7 +272,7 @@ const [telephone, setTelephone] = useState("");
                 <button
                   onClick={(e) => {
                     e.stopPropagation();
-                  openDetail(p);
+                  openDetail(p);}}
       
                   className="text-xs rounded-full px-3 py-1.5 border border-[#4A3F41]/20 transition-colors"
                   onMouseEnter={(e) => {
